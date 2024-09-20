@@ -27,4 +27,4 @@ def spotify(name):
         return f"No artist found for {name}"
 
 # Test the function
-print(spotify('Taylor Swift'))
+print(spotify('Kendrick Lamar'))

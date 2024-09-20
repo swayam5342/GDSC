@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <!-- Question Section -->
+    <section class="question-page">
+        <div class="question-container">
+            <h2>Question 1</h2>
+            <form action="question2.html" method="GET" class="question-form">
+                <div class="form-group">
+                    <label for="q1">Who Are Your Three Favorite Artists At The Moment (Underground/Unknown Artists Appreciated!)?</label>
+                    <input type="text" id="q1" name="q1" required>
+                </div>
+                <button type="submit" class="cta-btn">Next</button>
+            </form>
+        </div>
+    </section>
+    <script>
+        function storeAnswer(event) {
+            event.preventDefault();
+
+            // Store the answer in localStorage
+            const q1Answer = document.getElementById('q1').value;
+            localStorage.setItem('q1', q1Answer);
+
+            // Redirect to the next question
+            window.location.href = 'question2.html';
+        }
+    </script>
+</body>
+</html>
