@@ -3,29 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Question 2</title>
-    <link rel="stylesheet" href="new.css">
+    <title>Question 6</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Question Section -->
     <section class="question-page">
         <div class="question-container">
             <h2>Question 6</h2>
-            <form action="question7.html" method="GET" class="question-form">
+            <form id="question5Form" class="question-form" onsubmit="storeAnswer(event)">
                 <div class="form-group">
-                    <label for="q6">What Is A Lesser-Known Hobby Or Skill That You're Looking To Pursue/Further Your Interests In</label>
+                    <label for="q6">Choose A Random Entertainment Faction.</label>
                     <input type="text" id="q6" name="q6" required>
                 </div>
                 <button type="submit" class="cta-btn">Next</button>
             </form>
         </div>
     </section>
+
     <script>
         function storeAnswer(event) {
             event.preventDefault();
 
             // Store the answer in localStorage
-            const q1Answer = document.getElementById('q6').value;
+            const q6Answer = document.getElementById('q6').value;
             localStorage.setItem('q6', q6Answer);
 
             // Redirect to the next question

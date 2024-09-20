@@ -3,29 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Question 2</title>
-    <link rel="stylesheet" href="new.css">
+    <title>Question 7</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Question Section -->
     <section class="question-page">
         <div class="question-container">
             <h2>Question 7</h2>
-            <form action="question8.html" method="GET" class="question-form">
+            <form id="question7Form" class="question-form" onsubmit="storeAnswer(event)">
                 <div class="form-group">
-                    <label for="q7">What Is A Book That You Think Deserves More Recognition?</label>
+                    <label for="q7">Choose A Random Entertainment Faction.</label>
                     <input type="text" id="q7" name="q7" required>
                 </div>
                 <button type="submit" class="cta-btn">Next</button>
             </form>
         </div>
     </section>
+
     <script>
         function storeAnswer(event) {
             event.preventDefault();
 
             // Store the answer in localStorage
-            const q1Answer = document.getElementById('q7').value;
+            const q7Answer = document.getElementById('q7').value;
             localStorage.setItem('q7', q7Answer);
 
             // Redirect to the next question
@@ -34,3 +35,4 @@
     </script>
 </body>
 </html>
+

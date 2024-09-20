@@ -4,42 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Question 2</title>
-    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Question Section -->
     <section class="question-page">
         <div class="question-container">
             <h2>Question 2</h2>
-            <form action="question3.html" method="GET" class="question-form">
+            <form id="question2Form" class="question-form" onsubmit="storeAnswer(event)">
                 <div class="form-group">
-                    <label for="q2">
-                        Imagine It's A Friday Evening, And All Your Classes Have Just Been Unexpectedly Cancelled.
-                        You Suddenly Find Yourself With Three Glorious Hours Of Free Time On The Massive VIT Campus, With No Immediate Responsibilities.
-                        How Do You Choose To Spend This Time?
-                    </label>
+                    <label for="q2">What is your age group?</label>
                     <select id="q2" name="q2" required>
                         <option value="" disabled selected>Select an option</option>
-                        <option value="18-25">Head To Your Room & Dial In On Some Video Games</option>
-                        <option value="26-35">Take A Walk Around The Campus With Some Beats</option>
-                        <option value="36-45">Grab A Ball And Some Ballers To Play A Sport</option>
-                        <option value="46+">Head To Periyar To Catch Up On Some Work</option>
-                        <option value="46+">Get Some Popcorn With A Show Or Movie</option>
-                        <option value="46+">Hit The Gym To Hit A Couple Sets</option>
-                        <option value="46+">Get Cozy With A Book</option>
-                        <option value="46+">Sleep</option>
+                        <option value="18-25">18-25</option>
+                        <option value="26-35">26-35</option>
+                        <option value="36-45">36-45</option>
+                        <option value="46+">46+</option>
                     </select>
                 </div>
                 <button type="submit" class="cta-btn">Next</button>
             </form>
         </div>
     </section>
+
     <script>
         function storeAnswer(event) {
             event.preventDefault();
 
             // Store the answer in localStorage
-            const q1Answer = document.getElementById('q2').value;
+            const q2Answer = document.getElementById('q2').value;
             localStorage.setItem('q2', q2Answer);
 
             // Redirect to the next question

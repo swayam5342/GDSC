@@ -3,29 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Question 2</title>
-    <link rel="stylesheet" href="new.css">
+    <title>Question 3</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Question Section -->
     <section class="question-page">
         <div class="question-container">
             <h2>Question 3</h2>
-            <form action="question4.html" method="GET" class="question-form">
+            <form id="question3Form" class="question-form" onsubmit="storeAnswer(event)">
                 <div class="form-group">
-                    <label for="q3">What Is A Business Idea/Social Cause/Anything You Desperately Want To Pursue, But Don't Have The Company/Resources To Do So?</label>
-                    <input type="text" id="q3" name="q3" required>
+                    <label for="q3">What is your age group?</label>
+                    <select id="q3" name="q3" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="18-25">18-25</option>
+                        <option value="26-35">26-35</option>
+                        <option value="36-45">36-45</option>
+                        <option value="46+">46+</option>
+                    </select>
                 </div>
                 <button type="submit" class="cta-btn">Next</button>
             </form>
         </div>
     </section>
+
     <script>
         function storeAnswer(event) {
             event.preventDefault();
 
             // Store the answer in localStorage
-            const q1Answer = document.getElementById('q3').value;
+            const q3Answer = document.getElementById('q3').value;
             localStorage.setItem('q3', q3Answer);
 
             // Redirect to the next question
