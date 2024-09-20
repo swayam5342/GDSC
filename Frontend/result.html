@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <!-- Result Section -->
+    <section class="result-page">
+        <div class="result-container">
+            <h2>Your Answers</h2>
+            <div class="results">
+                <p><strong>1. What is your name?</strong> <span id="q1"></span></p>
+                <p><strong>2. What is your age group?</strong> <span id="q2"></span></p>
+                <p><strong>3. Do you enjoy online learning?</strong> <span id="q3"></span></p>
+                <p><strong>4. Which platform do you use for learning?</strong> <span id="q4"></span></p>
+                <p><strong>5. How many hours do you spend learning weekly?</strong> <span id="q5"></span></p>
+                <p><strong>6. How would you rate the quality of online education?</strong> <span id="q6"></span></p>
+                <p><strong>7. Do you prefer live classes or recorded lessons?</strong> <span id="q7"></span></p>
+                <p><strong>8. Which devices do you use for online learning?</strong> <span id="q8"></span></p>
+                <p><strong>9. What is your primary motivation for learning online?</strong> <span id="q9"></span></p>
+                <p><strong>10. Any suggestions for improving online learning platforms?</strong> <span id="q10"></span></p>
+            </div>
+            
+            <div class="result-actions">
+                <a href="new.html" class="cta-btn">Go to Home</a>
+                <a href="profile.html" class="cta-btn">View Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Load and display stored answers from localStorage
+        document.getElementById('q1').innerText = localStorage.getItem('q1');
+        document.getElementById('q2').innerText = localStorage.getItem('q2');
+        document.getElementById('q3').innerText = localStorage.getItem('q3');
+        document.getElementById('q4').innerText = localStorage.getItem('q4');
+        document.getElementById('q5').innerText = localStorage.getItem('q5');
+        document.getElementById('q6').innerText = localStorage.getItem('q6');
+        document.getElementById('q7').innerText = localStorage.getItem('q7');
+        document.getElementById('q8').innerText = localStorage.getItem('q8');
+        document.getElementById('q9').innerText = localStorage.getItem('q9');
+        document.getElementById('q10').innerText = localStorage.getItem('q10');
+    </script>
+</body>
+</html>

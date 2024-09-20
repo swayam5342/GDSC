@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="logo">MyWebsite</div>
+        <ul class="nav-links">
+            <li><a href="new.html">Home</a></li>
+            <li><a href="new.html#features">Features</a></li>
+            <li><a href="new.html#about">About</a></li>
+            <li><a href="signup.html">Signup</a></li>
+        </ul>
+    </nav>
+
+    <!-- Questionnaire Section -->
+    <section class="questionnaire-page">
+        <div class="questionnaire-container">
+            <h2>Questionnaire</h2>
+            <p>Please answer the following questions to the best of your ability:</p>
+            <form action="#" class="questionnaire-form">
+                <!-- Question 1 -->
+                <div class="form-group">
+                    <label for="q1">1. What is your name?</label>
+                    <input type="text" id="q1" name="q1" required>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="form-group">
+                    <label for="q2">2. What is your age group?</label>
+                    <select id="q2" name="q2" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="18-25">18-25</option>
+                        <option value="26-35">26-35</option>
+                        <option value="36-45">36-45</option>
+                        <option value="46+">46+</option>
+                    </select>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="form-group">
+                    <label for="q3">3. Do you enjoy online learning?</label>
+                    <input type="radio" id="q3-yes" name="q3" value="Yes">
+                    <label for="q3-yes">Yes</label>
+                    <input type="radio" id="q3-no" name="q3" value="No">
+                    <label for="q3-no">No</label>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="form-group">
+                    <label for="q4">4. Which platform do you use for learning online? (Select all that apply)</label>
+                    <input type="checkbox" id="q4-platform1" name="q4[]" value="Coursera">
+                    <label for="q4-platform1">Coursera</label>
+                    <input type="checkbox" id="q4-platform2" name="q4[]" value="Udemy">
+                    <label for="q4-platform2">Udemy</label>
+                    <input type="checkbox" id="q4-platform3" name="q4[]" value="edX">
+                    <label for="q4-platform3">edX</label>
+                    <input type="checkbox" id="q4-platform4" name="q4[]" value="LinkedIn Learning">
+                    <label for="q4-platform4">LinkedIn Learning</label>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="form-group">
+                    <label for="q5">5. How many hours do you spend on learning weekly?</label>
+                    <input type="number" id="q5" name="q5" required min="0">
+                </div>
+
+                <!-- Question 6 -->
+                <div class="form-group">
+                    <label for="q6">6. How would you rate the quality of online education?</label>
+                    <select id="q6" name="q6" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="Excellent">Excellent</option>
+                        <option value="Good">Good</option>
+                        <option value="Average">Average</option>
+                        <option value="Poor">Poor</option>
+                    </select>
+                </div>
+
+                <!-- Question 7 -->
+                <div class="form-group">
+                    <label for="q7">7. Do you prefer live classes or recorded lessons?</label>
+                    <input type="radio" id="q7-live" name="q7" value="Live">
+                    <label for="q7-live">Live</label>
+                    <input type="radio" id="q7-recorded" name="q7" value="Recorded">
+                    <label for="q7-recorded">Recorded</label>
+                </div>
+
+                <!-- Question 8 -->
+                <div class="form-group">
+                    <label for="q8">8. Which devices do you use for online learning? (Select all that apply)</label>
+                    <input type="checkbox" id="q8-device1" name="q8[]" value="Desktop">
+                    <label for="q8-device1">Desktop</label>
+                    <input type="checkbox" id="q8-device2" name="q8[]" value="Laptop">
+                    <label for="q8-device2">Laptop</label>
+                    <input type="checkbox" id="q8-device3" name="q8[]" value="Tablet">
+                    <label for="q8-device3">Tablet</label>
+                    <input type="checkbox" id="q8-device4" name="q8[]" value="Mobile">
+                    <label for="q8-device4">Mobile</label>
+                </div>
+
+                <!-- Question 9 -->
+                <div class="form-group">
+                    <label for="q9">9. What is your primary motivation for learning online?</label>
+                    <textarea id="q9" name="q9" rows="4" required></textarea>
+                </div>
+
+                <!-- Question 10 -->
+                <div class="form-group">
+                    <label for="q10">10. Any suggestions for improving online learning platforms?</label>
+                    <textarea id="q10" name="q10" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="cta-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
