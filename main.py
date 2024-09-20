@@ -19,4 +19,4 @@ def get_data():
 data = con.cursor.execute("SELECT * FROM user_responses")
 data=data.featchall()
 for i in data:
-    print(i)
+    ...
