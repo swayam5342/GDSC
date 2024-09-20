@@ -16,7 +16,7 @@ def get_data():
     gender=input("Enter the gender : ")
     phone_number=int(input('Enter the Number if not')) or 1
     return name, gender , phone_number
-con.cursor.execute
 data = con.cursor.execute("SELECT * FROM user_responses")
+data=data.featchall()
 for i in data:
     print(i)
