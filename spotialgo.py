@@ -30,10 +30,10 @@ def spotify(name):
 # Function to connect to the MySQL database
 def connect_db():
     return mysql.connector.connect(
-        host="localhost",
-        user="yourusername",
-        password="yourpassword",
-        database="yourdatabase"
+        host="127.0.0.1",
+        user="root",
+        password="gdsc@1234",
+        database="devjam"
     )
 
 # Function to get all users from the database
