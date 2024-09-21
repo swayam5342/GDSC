@@ -12,4 +12,4 @@
 4. run 'python manage.py runserver'
 
 # Note
-Make sure python interpreter is install and necessary modules
+Make sure python interpreter is installed and necessary modules
