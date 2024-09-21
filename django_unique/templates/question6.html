@@ -15,7 +15,8 @@
             <h2>Question 6</h2>
             <form id="question5Form" class="question-form" onsubmit="storeAnswer(event)">
                 <div class="form-group">
-                    <label for="q6">Choose A Random Entertainment Faction.</label>
+                    <label for="q6">What Is A Lesser-Known Hobby Or Skill That You're Looking To Pursue/Further Your Interests In
+                        (Keep This Niche! No Generic Answers.)</label>
                     <input type="text" id="q6" name="q6" required>
                 </div>
                 <button type="submit" class="cta-btn">Next</button>
@@ -32,7 +33,7 @@
             localStorage.setItem('q6', q6Answer);
 
             // Redirect to the next question
-            window.location.href = 'question7.html';
+            window.location.href = '/question7';
         }
     </script>
 </body>

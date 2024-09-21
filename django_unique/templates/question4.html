@@ -15,14 +15,8 @@
             <h2>Question 4</h2>
             <form id="question4Form" class="question-form" onsubmit="storeAnswer(event)">
                 <div class="form-group">
-                    <label for="q4">What is your age group?</label>
-                    <select id="q4" name="q4" required>
-                        <option value="" disabled selected>Select an option</option>
-                        <option value="18-25">18-25</option>
-                        <option value="26-35">26-35</option>
-                        <option value="36-45">36-45</option>
-                        <option value="46+">46+</option>
-                    </select>
+                    <label for="q4">Choose The First 5 Letter Word That Comes To Your Head.</label>
+                    <input type="text" id="q4" name="q4" required>
                 </div>
                 <button type="submit" class="cta-btn">Next</button>
             </form>
@@ -38,7 +32,7 @@
             localStorage.setItem('q4', q4Answer);
 
             // Redirect to the next question
-            window.location.href = 'question5.html';
+            window.location.href = '/question5';
         }
     </script>
 </body>

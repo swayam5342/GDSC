@@ -15,13 +15,20 @@
             <h2>Question 2</h2>
             <form id="question2Form" class="question-form" onsubmit="storeAnswer(event)">
                 <div class="form-group">
-                    <label for="q2">What is your age group?</label>
+                    <label for="q2">Imagine It's A Friday Evening, And All Your Classes Have Just Been Unexpectedly Cancelled.
+                        You Suddenly Find Yourself With Three Glorious Hours Of Free Time On The Massive VIT Campus, With No Immediate Responsibilities.
+                        How Do You Choose To Spend This Time?
+                    </label>
                     <select id="q2" name="q2" required>
                         <option value="" disabled selected>Select an option</option>
-                        <option value="18-25">18-25</option>
-                        <option value="26-35">26-35</option>
-                        <option value="36-45">36-45</option>
-                        <option value="46+">46+</option>
+                        <option value="Head To Your Room & Dial In On Some Video Games">Head To Your Room & Dial In On Some Video Games</option>
+                        <option value="Take A Walk Around The Campus With Some Beats">Take A Walk Around The Campus With Some Beats</option>
+                        <option value="Grab A Ball And Some Ballers To Play A Sport">Grab A Ball And Some Ballers To Play A Sport </option>
+                        <option value="Head To Periyar To Catch Up On Some Work">Head To Periyar To Catch Up On Some Work</option>
+                        <option value="Get Some Popcorn With A Show Or Movie">Get Some Popcorn With A Show Or Movie</option>
+                        <option value="Hit The Gym To Hit A Couple Sets">Hit The Gym To Hit A Couple Sets</option>
+                        <option value="Get Cozy With A Book"> Get Cozy With A Book </option>
+                        <option value="Sleep">Sleep</option>
                     </select>
                 </div>
                 <button type="submit" class="cta-btn">Next</button>
@@ -38,7 +45,7 @@
             localStorage.setItem('q2', q2Answer);
 
             // Redirect to the next question
-            window.location.href = 'question3.html';
+            window.location.href = '/question3';
         }
     </script>
 </body>
