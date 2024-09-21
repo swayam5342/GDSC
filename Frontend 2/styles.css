@@ -1,0 +1,348 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #ff7e5f;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 80vh;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+}
+
+.hero-section p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.cta-btn {
+    background-color: #fff;
+    color: #ff7e5f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.cta-btn:hover {
+    background-color: #feb47b;
+    color: white;
+}
+
+/* Features Section */
+.features-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.feature-card {
+    background-color: white;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.feature-card h3 {
+    margin-bottom: 15px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: #333;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.testimonial {
+    background-color: #444;
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+}
+
+/* Creators Section */
+.creators-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.creator-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.creator-card {
+    background-color: white;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+/* About Section */
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Signup Section */
+.signup-section {
+    background-color: #6a11cb;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+.signup-section .cta-btn {
+    background-color: #fff;
+    color: #6a11cb;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.signup-section .cta-btn:hover {
+    background-color: #2575fc;
+    color: white;
+}
+
+/* Questionnaire Page Styles */
+.questionnaire-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.questionnaire-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    text-align: left;
+}
+
+.questionnaire-container h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.questionnaire-container p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.questionnaire-form .form-group {
+    margin-bottom: 20px;
+}
+
+.questionnaire-form label {
+    font-size: 16px;
+    color: #333;
+}
+
+.questionnaire-form input, 
+.questionnaire-form select, 
+.questionnaire-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.questionnaire-form input:focus, 
+.questionnaire-form select:focus, 
+.questionnaire-form textarea:focus {
+    outline: none;
+    border-color: #ff7e5f;
+}
+
+.questionnaire-form input[type="checkbox"], 
+.questionnaire-form input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.questionnaire-form button {
+    background-color: #ff7e5f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.questionnaire-form button:hover {
+    background-color: #feb47b;
+}
+
+/* Question Page Styles */
+.question-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #f4f4f4;
+}
+
+.question-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: left;
+}
+
+.question-container h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.question-form .form-group {
+    margin-bottom: 20px;
+}
+
+.question-form label {
+    font-size: 16px;
+    color: #333;
+}
+
+.question-form input, 
+.question-form select, 
+.question-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.question-form button {
+    background-color: #ff7e5f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.question-form button:hover {
+    background-color: #feb47b;
+}
+
+/* Result Page Styles */
+.result-page, .profile-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #f4f4f4;
+}
+
+.result-container, .profile-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    text-align: left;
+}
+
+.results p, .profile-container p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.result-actions {
+    margin-top: 30px;
+}
+
+.result-actions a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: white;
+    background-color: #ff7e5f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.result-actions a:hover {
+    background-color: #feb47b;
+}

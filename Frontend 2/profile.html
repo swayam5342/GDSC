@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Profile Section -->
+    <section class="profile-page">
+        <div class="profile-container">
+            <h2>Your Profile</h2>
+            <p><strong>Name:</strong> <span id="profile-name"></span></p>
+            <p><strong>Age Group:</strong> <span id="profile-age"></span></p>
+        </div>
+    </section>
+
+    <script>
+        // Load and display profile info from localStorage
+        document.getElementById('profile-name').innerText = localStorage.getItem('q1');
+        document.getElementById('profile-age').innerText = localStorage.getItem('q2');
+    //     document.getElementById('profile-learning').innerText = localStorage.getItem('q3');
+    //     document.getElementById('profile-platforms').innerText = localStorage.getItem('q4');
+    // </script>
+</body>
+</html>

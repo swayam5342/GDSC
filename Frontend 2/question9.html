@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 9</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Question Section -->
+    <section class="question-page">
+        <div class="question-container">
+            <h2>Question 9</h2>
+            <form id="question8Form" class="question-form" onsubmit="storeAnswer(event)">
+                <div class="form-group">
+                    <label for="q9"> Which Of The Following Events/Activities On Campus Are You Most Likely To Attend?
+                    </label>
+                    <select id="q9" name="q9" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="18-25">Flash Mob/Dance Battle [Dance Performance or Competition]</option>
+                        <option value="26-35">Cultural Carnival [Music Concert or Cultural Fest]</option>
+                        <option value="36-45">Fitness Frenzy [Fitness Bootcamp or Yoga Session]</option>
+                        <option value="46+">Art & Soul [Art Exhibition or Cultural Showcase]</option>
+                        <option value="46+">Tech Extravaganza [Hackathon or Coding Event]</option>
+                        <option value="46+">Brainstorm Bash [Guest Lecture or Seminar]</option>
+                        <option value="46+">Marathon Movie Madness [Film Screening]</option>
+                        <option value="46+">E-Sports Fever [Gaming Tournament]</option>
+                        <option value="46+">Serious Sport Mode [Sports Event]</option>
+                    </select>
+                </div>
+                <button type="submit" class="cta-btn">Next</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        function storeAnswer(event) {
+            event.preventDefault();
+
+            // Store the answer in localStorage
+            const q9Answer = document.getElementById('q9').value;
+            localStorage.setItem('q9', q9Answer);
+
+            // Redirect to the next question
+            window.location.href = 'question10.html';
+        }
+    </script>
+</body>
+
+</html>
