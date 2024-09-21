@@ -16,13 +16,20 @@
             <!-- <form action="result.html" method="POST" class="question-form"> -->
             <form id="question10Form" class="question-form" onsubmit="storeAnswer(event)">
                 <div class="form-group">
-                    <label for="q10"> Which Of The Following Are Your Favorite Methods Of Procrastination When You Have A Deadline Incoming?</label>
+                    <label for="q10">Imagine You’ve Got a Deadline Looming, But Procrastination Has Other Plans.
+                        Which of the Following is Your Go-To Way of Avoiding Work When You Should Really Be Focusing?</label>
                     <select id="q10" name="q10" required>
                         <option value="" disabled selected>Select an option</option>
-                        <option value="18-25">18-25</option>
-                        <option value="26-35">26-35</option>
-                        <option value="36-45">36-45</option>
-                        <option value="46+">46+</option>
+                        <option value="Go on a Random Walk Around Campus, Hoping Inspiration Strikes<">Go on a Random Walk Around Campus, Hoping Inspiration Strikes</option>
+                        <option value="Organize Your Playlist (Because Music Matters More Right Now)">Organize Your Playlist (Because Music Matters More Right Now)</option>
+                        <option value="Binge-Watch “Just One More” Episode of Your Favorite Show">Binge-Watch “Just One More” Episode of Your Favorite Show</option>
+                        <option value="Start a New Hobby You’ll Definitely Master in 30 Minutes">Start a New Hobby You’ll Definitely Master in 30 Minutes</option>
+                        <option value="Scroll Through Social Media Like It's a Part-Time Job">Scroll Through Social Media Like It's a Part-Time Job</option>
+                        <option value="Clean Your Entire Room for the First Time in Weeks">Clean Your Entire Room for the First Time in Weeks</option>
+                        <option value="Play “Just One Game” That Somehow Lasts Hours">Play “Just One Game” That Somehow Lasts Hours</option>
+                        <option value="Whip Up a Snack You Absolutely Don’t Need">Whip Up a Snack You Absolutely Don’t Need</option>
+                        <option value="Dive Headfirst Into a YouTube Rabbit Hole">Dive Headfirst Into a YouTube Rabbit Hole</option>
+                        <option value="Nap Like There’s No Tomorrow">Nap Like There’s No Tomorrow</option>
                     </select>
                 </div>
                 <button type="submit" class="cta-btn">Submit</button>
@@ -40,7 +47,7 @@
             localStorage.setItem('q10', q10Answer);
 
             // Redirect to the result page
-            window.location.href = 'result.html';
+            window.location.href = '/result';
         }
     </script>
 </body>

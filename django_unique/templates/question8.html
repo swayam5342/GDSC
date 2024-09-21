@@ -17,19 +17,20 @@
             <h2>Question 8</h2>
             <form id="question8Form" class="question-form" onsubmit="storeAnswer(event)">
                 <div class="form-group">
-                    <label for="q8"> Which Of The Following Events/Activities On Campus Are You Most Likely To Attend?
+                    <label for="q8"> Imagine There’s a Buzzing Event Happening on Campus—Which of These Activities Are You Most Likely to Show Up For?\
+                        What Kind of Campus Scene Gets You Excited to Be a Part of It? 
                     </label>
                     <select id="q8" name="q8" required>
                         <option value="" disabled selected>Select an option</option>
-                        <option value="18-25">Flash Mob/Dance Battle [Dance Performance or Competition]</option>
-                        <option value="26-35">Cultural Carnival [Music Concert or Cultural Fest]</option>
-                        <option value="36-45">Fitness Frenzy [Fitness Bootcamp or Yoga Session]</option>
-                        <option value="46+">Art & Soul [Art Exhibition or Cultural Showcase]</option>
-                        <option value="46+">Tech Extravaganza [Hackathon or Coding Event]</option>
-                        <option value="46+">Brainstorm Bash [Guest Lecture or Seminar]</option>
-                        <option value="46+">Marathon Movie Madness [Film Screening]</option>
-                        <option value="46+">E-Sports Fever [Gaming Tournament]</option>
-                        <option value="46+">Serious Sport Mode [Sports Event]</option>
+                        <option value="Flash Mob/Dance Battle [Dance Performance or Competition]">Flash Mob/Dance Battle [Dance Performance or Competition]</option>
+                        <option value="Cultural Carnival [Music Concert or Cultural Fest]">Cultural Carnival [Music Concert or Cultural Fest]</option>
+                        <option value="Fitness Frenzy [Fitness Bootcamp or Yoga Session]">Fitness Frenzy [Fitness Bootcamp or Yoga Session]</option>
+                        <option value="Art & Soul [Art Exhibition or Cultural Showcase]">Art & Soul [Art Exhibition or Cultural Showcase]</option>
+                        <option value="Tech Extravaganza [Hackathon or Coding Event]">Tech Extravaganza [Hackathon or Coding Event]</option>
+                        <option value="Brainstorm Bash [Guest Lecture or Seminar]">Brainstorm Bash [Guest Lecture or Seminar]</option>
+                        <option value="Marathon Movie Madness [Film Screening]">Marathon Movie Madness [Film Screening]</option>
+                        <option value="E-Sports Fever [Gaming Tournament]">E-Sports Fever [Gaming Tournament]</option>
+                        <option value="Serious Sport Mode [Sports Event]">Serious Sport Mode [Sports Event]</option>
                     </select>
                 </div>
                 <button type="submit" class="cta-btn">Next</button>
@@ -46,7 +47,7 @@
             localStorage.setItem('q8', q8Answer);
 
             // Redirect to the next question
-            window.location.href = 'question9.html';
+            window.location.href = '/question9';
         }
     </script>
 </body>

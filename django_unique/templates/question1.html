@@ -15,7 +15,7 @@
             <h2>Question 1</h2>
             <form id="question1Form" class="question-form" onsubmit="storeAnswer(event)">
                 <div class="form-group">
-                    <label for="q1">What is your name?</label>
+                    <label for="q1">Who Are Your Three Favorite Artists At The Moment (Underground/Unknown Artists Appreciated!)?</label>
                     <input type="text" id="q1" name="q1" required>
                 </div>
                 <button type="submit" class="cta-btn">Next</button>
@@ -32,7 +32,7 @@
             localStorage.setItem('q1', q1Answer);
 
             // Redirect to the next question
-            window.location.href = 'question2.html';
+            window.location.href = '/question2';
         }
     </script>
 </body>
