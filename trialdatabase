@@ -1,0 +1,159 @@
+CREATE TABLE user_responses (
+    user_id INT AUTO_INCREMENT PRIMARY KEY, -- Unique identifier for each user
+    name VARCHAR(100),                      -- Name of the user
+    gender ENUM('Male', 'Female', 'Other'),  -- Gender, can be extended with more options
+    phone_number VARCHAR(15),               -- Phone number (e.g., 10-15 characters including country code)
+    language VARCHAR(50),                   -- Language spoken by the user
+    q1 TEXT,                                -- Question 1 response (Favorite artists)
+    q2 TEXT,                                -- Question 2 response (How would you spend free time?)
+    q3 TEXT,                                -- Question 3 response (Business idea/Social cause)
+    q4 TEXT,                                -- Question 4 response (5-letter word)
+    q5 TEXT,                                -- Question 5 response (Movie/TV show/Anime)
+    q6 TEXT,                                -- Question 6 response (Hobby or skill)
+    q7 TEXT,                                -- Question 7 response (Favorite book)
+    q8 TEXT,                                -- Question 8 response (Campus event preference)
+    q9 TEXT,                                -- Question 9 response (Productivity time)
+    q10 TEXT                                -- Question 10 response (Procrastination activity)
+);
+
+-- Insert Statements
+
+-- Response 1
+INSERT INTO user_responses (name, gender, phone_number, language, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10) 
+VALUES ('Arjun Kapoor', 'Male', '+91 9876543210', 'Hindi', 
+'Tash Sultana, FKJ, Jordan Rakei', 
+'c', 
+'Connecting niche skill teachers/learners.', 
+'Apple', 
+'Breaking Bad', 
+'Learning stop-motion animation.', 
+'The Rosie Project', 
+'b', 
+'b', 
+'f');
+
+-- Response 2
+INSERT INTO user_responses (name, gender, phone_number, language, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10) 
+VALUES ('Neha Sharma', 'Female', '+91 9123456789', 'English', 
+'Tom Misch, Loyle Carner, Men I Trust', 
+'e', 
+'Eco-friendly, zero-waste home goods line.', 
+'Dream', 
+'The Office', 
+'Learning handpan instrument.', 
+'The Book Thief', 
+'d', 
+'d', 
+'b');
+
+-- Response 3
+INSERT INTO user_responses (name, gender, phone_number, language, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10) 
+VALUES ('Ravi Singh', 'Male', '+91 7890123456', 'English', 
+'Anderson .Paak, Thundercat, Kaytranada', 
+'f', 
+'Game promoting mental health awareness.', 
+'River', 
+'Naruto', 
+'Wooden miniatures crafting.', 
+'Station Eleven', 
+'c', 
+'e', 
+'g');
+
+-- Response 4
+INSERT INTO user_responses (name, gender, phone_number, language, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10) 
+VALUES ('Sana Patel', 'Female', '+91 6543210987', 'Tamil', 
+'Jacob Collier, Hiatus Kaiyote, BADBADNOTGOOD', 
+'h', 
+'Mental health app for students.', 
+'Light', 
+'Friends', 
+'Learning archery.', 
+'The Shadow of the Wind', 
+'h', 
+'f', 
+'i');
+
+-- Response 5
+INSERT INTO user_responses (name, gender, phone_number, language, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10) 
+VALUES ('Vikram Nair', 'Male', '+91 8765432109', 'Malayalam', 
+'The Internet, Saba, Noname', 
+'b', 
+'Mobile library van for rural areas.', 
+'Giant', 
+'Attack on Titan', 
+'Learning bonsai tree sculpting.', 
+'The Night Circus', 
+'g', 
+'c', 
+'a');
+
+-- Response 6
+INSERT INTO user_responses (name, gender, phone_number, language, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10) 
+VALUES ('Karan Verma', 'Male', '+91 9876543211', 'Hindi', 
+'Ed Sheeran, Dua Lipa, The Weeknd', 
+'a', 
+'Building a sustainable clothing line.', 
+'Plant', 
+'Game of Thrones', 
+'Photography.', 
+'The Alchemist', 
+'c', 
+'e', 
+'b');
+
+-- Response 7
+INSERT INTO user_responses (name, gender, phone_number, language, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10) 
+VALUES ('Meera Iyer', 'Female', '+91 9234567890', 'English', 
+'Taylor Swift, Coldplay, BTS', 
+'e', 
+'A mental health awareness podcast.', 
+'Beach', 
+'Friends', 
+'Baking.', 
+'To Kill a Mockingbird', 
+'a', 
+'b', 
+'d');
+
+-- Response 8
+INSERT INTO user_responses (name, gender, phone_number, language, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10) 
+VALUES ('Amit Rao', 'Male', '+91 8901234567', 'Hindi', 
+'Drake, Billie Eilish, Ariana Grande', 
+'f', 
+'Starting a tech blog.', 
+'Music', 
+'The Office', 
+'Running.', 
+'1984', 
+'d', 
+'c', 
+'g');
+
+-- Response 9
+INSERT INTO user_responses (name, gender, phone_number, language, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10) 
+VALUES ('Sakshi Sharma', 'Female', '+91 9012345678', 'English', 
+'Bruno Mars, Lady Gaga, Shawn Mendes', 
+'b', 
+'Creating an art supply brand.', 
+'Smile', 
+'Breaking Bad', 
+'Yoga.', 
+'Pride and Prejudice', 
+'e', 
+'a', 
+'f');
+
+-- Response 10
+INSERT INTO user_responses (name, gender, phone_number, language, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10) 
+VALUES ('Rohit Kumar', 'Male', '+91 7654321098', 'Hindi', 
+'Eminem, Justin Bieber, Rihanna', 
+'g', 
+'Developing a fitness app.', 
+'Money', 
+'Stranger Things', 
+'Reading.', 
+'The Great Gatsby', 
+'f', 
+'d', 
+'i');
