@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Question 2</title>
-    <link rel="stylesheet" href="new.css">
+    <title>Question 8</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Question Section -->
     <section class="question-page">
         <div class="question-container">
             <h2>Question 8</h2>
-            <form action="question9.html" method="GET" class="question-form">
+            <form id="question8Form" class="question-form" onsubmit="storeAnswer(event)">
                 <div class="form-group">
-                    <label for="q8"> Which Of The Following Events/Activities On Campus Are You Most Likely To Attend? </label>
+                    <label for="q8"> Which Of The Following Events/Activities On Campus Are You Most Likely To Attend?
+                    </label>
                     <select id="q8" name="q8" required>
                         <option value="" disabled selected>Select an option</option>
                         <option value="18-25">Flash Mob/Dance Battle [Dance Performance or Competition]</option>
@@ -31,12 +34,13 @@
             </form>
         </div>
     </section>
+
     <script>
         function storeAnswer(event) {
             event.preventDefault();
 
             // Store the answer in localStorage
-            const q1Answer = document.getElementById('q8').value;
+            const q8Answer = document.getElementById('q8').value;
             localStorage.setItem('q8', q8Answer);
 
             // Redirect to the next question
@@ -44,4 +48,5 @@
         }
     </script>
 </body>
+
 </html>

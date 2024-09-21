@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Question 10</title>
-    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Question Section -->
@@ -12,7 +12,7 @@
         <div class="question-container">
             <h2>Question 10</h2>
             <!-- <form action="result.html" method="POST" class="question-form"> -->
-                <form id="question10Form" class="question-form" onsubmit="storeAnswers(event)">
+            <form id="question10Form" class="question-form" onsubmit="storeAnswer(event)">
                 <div class="form-group">
                     <label for="q10"> Which Of The Following Are Your Favorite Methods Of Procrastination When You Have A Deadline Incoming?</label>
                     <select id="q10" name="q10" required>
@@ -28,7 +28,7 @@
         </div>
     </section>
     <script>
-        function storeAnswers(event) {
+        function storeAnswer(event) {
             event.preventDefault();
 
             // Get answer from the textarea
